@@ -48,6 +48,10 @@ app.post(
   }
 );
 
+app.get("/", (req, res) => {
+  res.send("Well hello!");
+});
+
 // Route to get all users
 app.get("/users", async (req, res) => {
   try {
